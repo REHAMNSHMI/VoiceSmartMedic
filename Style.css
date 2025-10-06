@@ -1,0 +1,103 @@
+
+:root{
+  --accent:#0666a3;
+  --accent-dark:#044f7a;
+  --bg:#f7fbff;
+  --card:#ffffff;
+  --text:#222;
+}
+h2 {
+  text-align: center;
+}
+
+*{box-sizing:border-box}
+body{
+  font-family: "Segoe UI", Tahoma, "Noto Naskh Arabic", Arial;
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  padding:18px;
+}
+
+header{
+  text-align:center;
+  margin-bottom:18px;
+}
+h1{
+  margin:6px 0;
+  color:var(--accent-dark);
+  font-size:28px;
+}
+.subtitle{
+  margin:0;
+  color:#555;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px; 
+  margin: 60px auto; 
+  text-align: center;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.big-btn{
+  background:linear-gradient(180deg,var(--accent),var(--accent-dark));
+  border:none;
+  color:white;
+  padding:22px 36px;
+  border-radius:14px;
+  font-size:20px;
+  cursor:pointer;
+  box-shadow:0 6px 18px rgba(6,102,163,0.25);
+}
+.hint {
+  color: #666;
+  font-size: 15px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+.hidden{display:none}
+
+.cards{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  justify-content:center;
+  margin-top:12px;
+}
+.card{
+  background:var(--card);
+  min-width:220px;
+  max-width:260px;
+  padding:12px;
+  border-radius:10px;
+  box-shadow:0 3px 10px rgba(0,0,0,0.06);
+}
+.card h3{margin:0 0 6px;font-size:16px}
+.card p{margin:0 0 8px;color:#555;font-size:14px}
+.card button{
+  background:var(--accent);
+  color:#fff;border:0;padding:8px 12px;border-radius:8px;cursor:pointer;
+}
+
+#stepsSection{margin-top:18px;text-align:right}
+#stepsList{line-height:1.8;font-size:16px}
+.controls{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+.controls button{
+  padding:8px 12px;border-radius:8px;border:0;background:#eee;cursor:pointer;
+}
+.controls button#readBtn{background:var(--accent);color:#fff}
+.controls button#stopBtn{background:#d9534f;color:#fff}
+.controls button#backBtn{background:#777;color:#fff}
+
+footer{margin-top:30px;text-align:center;color:#777;font-size:13px}
+@media (min-width:800px){
+  main{max-width:900px;margin:0 auto}
+}
